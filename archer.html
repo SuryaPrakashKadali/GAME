@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="archer.css">
+<div class="main" id="maincircle">
+    <input id='start' type="button" value="start" onclick="myfoo()">
+    <img id="image" src="projectwork/fruits.png" height="240px" width="240px">
+    <div id="innercircle">
+        <img id="arrow" src="projectwork/image.png">
+    </div>
+    
+</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(function () {
+                var timer = null, interval = 1000, value = 0;
+                $("#start").click(function () {
+                    if (timer !== null) return; timer
+                        = setInterval(function () { $("#input").val(++value); }, interval);
+                });
+                $("#stop").click(function () {
+                clearInterval(timer);
+                timer = null
+            });
+            });
+        </script>
+    
+    <body>
+        <br>
+        <br>
+        <div id='input'></div>
+    </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="archer.js"></script>
+<script>    
+    function myfoo() {
+        var ar = new Array();
+        ar[0] = "Apple";
+        ar[1] = "Cherry";
+        ar[2] = "PineApple";
+        ar[3] = "Banana";
+        ar[4] = "WaterMelon";
+        ar[5] = "Orange";
+        var i = Math.floor(6 * Math.random())
+        const val=ar[i];
+        window.alert(ar[i]);
+    }
+</script>
+
+</html>

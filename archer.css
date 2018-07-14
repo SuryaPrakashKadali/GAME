@@ -1,0 +1,30 @@
+@keyframes maincircle{
+    from{
+        transform:rotate(0deg)
+    }
+    to{
+        transform:rotate(360deg)
+    }
+}
+/*#maincircle{
+    border-bottom: 2px solid black;
+    margin:20% 10% 10% 10%;
+    height:120px;
+    position:relative;
+}*/
+#image{
+    margin:100px 50px 0px 100px; 
+    position: relative;
+}
+#arrow{
+    position: absolute;
+    width:200px;
+    height:200px;
+    right:0px;
+    top:120px;
+    /*animation: arrowmove 2s linear;*/
+}
+
+.animateimage {
+    animation:maincircle 6s infinite linear;
+}
